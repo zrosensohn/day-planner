@@ -1,0 +1,44 @@
+.content{
+    display: none;
+}
+.loader{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-right: -50%;
+    top: 50%;
+}
+.loader img{
+    width: 10%;
+}
+.time {
+    width: 8%;
+    margin: auto;
+    font-weight: bold;
+}
+
+.blue-jumbo{
+    color: #004085;
+    border-color: #b8daff;
+    margin-bottom: 2rem;
+}
+
+.past-time{
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+}
+
+.current-time{
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;}
+
+.available-time{
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;}
+
+    .no-js #loader { display: none;  }
+	.js #loader { display: block; position: absolute; left: 100px; top: 0; }
