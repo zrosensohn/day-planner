@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+// $( document ).ready(function() {
 
     //Pre loader
     $(function(){
@@ -78,6 +78,7 @@ $( document ).ready(function() {
             timeDiv.addClass("time mr-3 p-2");
             toDoDiv.addClass("todo flex-grow-1 mr-3 p-2");
             input.addClass("form-control");
+            input.addClass("block-display");
             input.attr({name: "", id: i, type: "text", disabled: "", value: toDoArray[i-8].toDo});
             saveDiv.addClass("button-container p-2");
             saveButton.addClass("btn btn-primary saveButton");
@@ -139,13 +140,15 @@ $( document ).ready(function() {
         e.preventDefault();
         alert("Are you sure?");
         toDoArray=[];
+        for(i=0; i<11; i++){
+            var hour = i + 8;
+            $("#" + hour).val("");
+        }
         initializeArray();
-        console.log(toDoArray);
         getStorage();
     })
     /////////////////////////////////////
-});
-
+// });
 
 
 
